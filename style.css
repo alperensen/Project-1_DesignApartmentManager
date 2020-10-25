@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;      /*logo ile düğmeleri ayırmak için*/
+    align-items: center;        /*ortalamak için*/
+    padding: 40px 100px;        /*yukarı ve aşşağıdan 40px sağ ve soldan 100px ittirir*/
+    z-index: 1;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;        /*yazı arasında 2px boşluk bırakır*/
+    color: white;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;  /*li oluşturunca noktaları kaldırır*/
+}
+header ul li a{
+    position: relative;
+    margin: 0 5px;      /*iki düğme arasındaki 5px boşluk bıraktırır*/
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #f46b45;
+    letter-spacing: 2px;
+    font-weight: 500;
+ 
+}
+header ul li a.active{
+    color: white;
+}
+header ul li a:hover{
+    background: #eea849;
+    color: white;
+}
+section{
+    padding: 100px;
+    justify-content: center;
+}
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    background: linear-gradient(45deg, #232526 0%, #323335 100%);          /*gradyan renkler için*/
+
+}
+.text-box{
+    text-align: center;
+}
+.page h2{
+    font-size: 5em;
+    color: white;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.page h3{
+    font-size: 1em;
+    color: gray;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.button{
+    position: relative;
+    background: linear-gradient(45deg, #f46b45 0%, #eea849 100%);          /*gradyan renkler için*/
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;          /*elementlerin kutu içine alabilmek için*/
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;        /*yazı arasındaki boşluk*/
+    margin-right: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.button:hover{
+    background: black;
+}
+.payment-button{
+    position: relative;
+    background: #f46b45;        
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;          /*elementlerin kutu içine alabilmek için*/
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;        /*yazı arasındaki boşluk*/
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.payment-card{
+    position: relative;
+    background: seashell;
+    padding: 40px 20px;
+    width: 350px;
+    height: 325px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-right: 30px;
+}
+.payment-button:hover{
+    background: black;
+}
+.payment-debt{
+    position: relative;
+    background: seashell;
+    padding: 0 auto;
+    width: 1000px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-right: 30px;
+}
+.debt4{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #f46b45;
+    text-transform: uppercase;
+}
+.line{
+    width: 1000px;
+    height: 3px;
+    background-color: black;
+    opacity: 100%;
+}
+.debt-text{
+    text-align: left;
+    margin: 30px 10px;
+    text-transform: uppercase;
+    
+}
+.debt-text p {
+    margin-bottom: 40px;
+    width: 200px;
+    text-align: right;
+    
+}
+.debt-money{
+    text-align: left;
+    margin-top: -390px;
+    margin-left: 230px;
+}
+.debt-money p{
+    margin-bottom: 40px;
+}
+.credit-card{
+    font-size: 15px;
+    position: fixed;
+    margin: -400px 640px;
+
+}
+.credit-card label{
+    width: 150px;
+    height: 30px;
+    font-weight: 500;
+    
+}
+.credit-card input{
+    margin-bottom: 15px;
+}
+.debt5{
+    text-align: right;
+    color: #f46b45;
+    margin-right: 225px;
+    margin-top: -30px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.page h1{
+    color: #f46b45;
+    font-size: 40px;
+    position: relative;
+    margin: 30px 30px;
+    text-align: center;
+}
+.round{
+    background-color: #f46b45;
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    margin: 70px 70px;
+    
+}
+.submit{
+    width: 170px;
+    height: 30px;
+    margin-top: 10px;
+    border-style: none;
+    outline: none;
+    background-color: #f46b45;
+    font-weight: 700;
+    color: white;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+.account{
+    width: 30px;
+    margin: 40px;
+}
+.complaint{
+    position: relative;
+    background: seashell;
+    padding: 0 auto;
+    width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+    display: flex;
+}
+.anonymous{
+    margin: 40px;
+    font-size: 24px;
+    color: black;
+    font-style: italic;
+}
+.anonymous p{
+    margin-bottom: 55px;
+}
+.account img{
+    margin-bottom: 70px;
+}
+.contact h4{
+    margin: 40px;
+    font-size: 20px;
+    color: #f46b45;
+}
+.contact p{
+    position: fixed;
+    margin: 80px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.contact{
+    position: relative;
+    background: seashell;
+    padding: 0 auto;
+    width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+    display: flex;
+}
+.contact-1{
+    margin-top: 150px;
+    margin-left: 200px;
+    position: fixed;
+    
+}
+.contact-1 input{
+    width: 300px;
+    margin-bottom: 30px;
+    height: 30px;
+}
+.contact-1 .message{
+    width: 300px;
+    height: 100px;
+}

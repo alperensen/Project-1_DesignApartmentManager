@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>APARTMENT NAME</title>
+    </head>
+<body>
+    <header>
+        <label class="logo">Apartment Name</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="payments.html" class="active">Payments</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="complaint.html">Complaint</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="page">      <!--sayfa düzeni-->
+        <div class="payment-debt">
+           <h4 class="debt4"><b>Debt Informations</b></h4>
+           <h4 class="debt5"><b>Payment</b></h4> 
+        <div class="line"></div>
+            <div class="debt-text">
+                <p><b>Revenues:</b></p>
+                <p><b>Lng Expense:</b></p>
+                <p><b>Electric Expense:</b></p>
+                <p><b>Water Expense:</b></p>
+                <p><b>Other:</b></p>
+                <p><b>Total:</b></p>
+            </div>
+                <div class="debt-money">
+                    <p><b>500 $</b></p>
+                    <p><b>67 $</b></p>
+                    <p><b>238.99 $</b></p> 
+                    <p><b>6.99 $</b></p>
+                    <p><b>120.88 $</b></p>
+                    <p><b>934.86 $</b></p>
+                </div>
+                <form class="credit-card">
+                    <label for="tmoney">Total Money:</label><br>
+                    <input type="text" id="tmoney" name="tmoney"><br>
+                    <label for="cholder">Card Holder:</label><br>
+                    <input type="text" id="cholder" name="cholder"><br>
+                    <label for="cnumber">Card Number:</label><br>
+                    <input type="text" id="cnumber" name="cnumber"><br>
+                    <label for="edatem">Expiry Date Month:</label><br>
+                    <input type="month" id="edatem" name="edatem"><br>
+                    <label for="cvc">CVC:</label><br>
+                    <input type="text" id="cvc" name="cvc"><br>
+                    <button class="submit">PAY</button><br>
+                </form>
+        </div>
+    </section>
+</body>
+</html>
