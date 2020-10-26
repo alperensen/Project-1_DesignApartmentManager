@@ -28,6 +28,7 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;        /*yazı arasında 2px boşluk bırakır*/
     color: white;
+    margin-left: 20px;
 
 }
 header ul{
@@ -302,4 +303,84 @@ section{
 .contact-1 .message{
     width: 300px;
     height: 100px;
+}
+.saat{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff url(http://pantburk.info/upload/analogclock/bg_1000x1000.png);
+    background-size: cover;
+    border-radius: 50%;
+    border:solid 3px #f46b45;
+    box-shadow: 0 0 0.5px 0.5px #99371c, inset 0 0 2px #262626;
+
+}
+.saat::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 4.5px;
+    height: 4.5px;
+    background-color: #f46b45;
+    border-radius: 50%;
+    z-index: 4;
+}
+.akrep{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.akrep::before{
+    content: '';
+    position: absolute;
+    width: 2.25px;
+    height: 33%;
+    background: #262626;
+    left: calc(50% - 1.125px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 10px;
+}
+.yelkovan{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.yelkovan::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40%;
+    background: #262626;
+    left: calc(50% - 1px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 1px;
+}
+.saniye{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.saniye::before{
+    content: '';
+    position: absolute;
+    width: 1.2px;
+    height: 40%;
+    background: #f46b45;
+    left: calc(50% - 0.6px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 0.6px;
 }
